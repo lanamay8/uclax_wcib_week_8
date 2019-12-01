@@ -1,6 +1,9 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
+  // background-image: url('../images/phone.png');
+  // background-repeat: no-repeat;
+  // background-position: right;
   text-align: center;
 
   .container {
@@ -12,10 +15,10 @@ body {
   .row {
 
     &.heroSection {
-      // display: flex;
-      // flex-wrap: wrap;
+      flex-wrap: nowrap;
       background: #0cb3f8;
       height: 24.5rem;
+      overflow: inherit;
     }
 
     &.graySection {
@@ -69,13 +72,14 @@ body {
   background: #0cb3f8;
   max-width: 1140px;
   font-weight: bold;
-  padding: 0 5rem 2rem 5rem;
+  padding: 0 5rem 1rem 5rem;
 }
 
 .navbar-brand {
   font-size: 15px;
   color: #ffffff;
   margin-top: 2.8rem;
+  margin-right: 0;
 }
 .navbar-brand img {
   margin-top: -5px;
@@ -93,10 +97,10 @@ body {
   border-bottom-color: #ffffff;
 }
 
-.heroImage {
-    width: 150px;
-    margin-left: 15px;
-  }
+// .heroImage {
+//     // width: 150px;
+//     // margin-left: 15px;
+//   }
 
 .contentImage {
     width: 250px;
@@ -110,6 +114,7 @@ body {
      .nav-masthead {
        margin-top: 2rem;
        text-align: center;
+       justify-content: center;
       }
   }
 
@@ -292,7 +297,8 @@ li.spacey {
   color: #292534;
   font-size: 13px;
   height: 60px;
-  margin-left: 4.2rem;;
+  margin-left: 4.2rem;
+  //margin-top: 1rem;
   padding: 20px 6px 10px;
 }
 .new {
